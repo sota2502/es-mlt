@@ -1,0 +1,7 @@
+{
+  "query": {
+    "term":{
+      "body.keyword":"有吉"
+    }
+  }
+}

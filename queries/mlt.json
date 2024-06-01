@@ -1,0 +1,10 @@
+﻿{
+  "query": {
+    "more_like_this" : {
+      "fields" : ["title", "body"],
+      "like" : "東京海洋大学は、キングサーモンの卵を何度も産むことができるニジマスを作り出すことに成功",
+      "min_term_freq" : 1,
+      "max_query_terms" : 12
+    }
+  }
+}
