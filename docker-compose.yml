@@ -1,6 +1,8 @@
+version: "3.4"
+
 services:
   es01:
-    image: elasticsearch:8.6.2
+    build: dockerfiles/
     container_name: es01
     environment:
       - node.name=es01
@@ -15,14 +17,6 @@ services:
       - data01:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
-    networks:
-      - elasticstack
-    tty: true
 
 volumes:
   data01:
-    driver: local
-
-networks:
-  elasticstack:
-    driver: bridge
